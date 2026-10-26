@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff2f7">
+<title>A Little Note for Hima 💗</title>
+<style>
+:root{--pink:#f7a9c4;--deep:#b94d79;--ink:#493846;--muted:#806b7a;--card:#ffffffdf;--shadow:0 18px 55px #a65b201f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;background:radial-gradient(ellipse at 12% 10%,#ffe1ec,transparent 34%),radial-gradient(ellipse at 88% 28%,#e9e4ff,transparent 34%),linear-gradient(145deg,#fff8f8,#fffaf3 55%,#f8f4ff);overflow-x:hidden}
+button{font:inherit}button:focus-visible{outline:3px solid #a84c78;outline-offset:4px}.ambient{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.floaty{position:absolute;bottom:-40px;opacity:.5;animation:float-up linear forwards;user-select:none}@keyframes float-up{from{transform:translateY(0) rotate(0);opacity:0}12%{opacity:.55}to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+.wrap{position:relative;z-index:1;width:min(760px,100%);margin:0 auto;padding:22px 18px 52px}.topline{display:flex;justify-content:center;margin:8px 0 20px}.pill{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;border:1px solid #f6d4e2;border-radius:999px;background:#ffffffa8;color:var(--deep);font-size:.82rem}
+.screen{display:none;animation:appear .55s ease both}.screen.active{display:block}@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.hero{min-height:min(76vh,700px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px 8px 42px}.envelope-wrap{width:190px;height:150px;position:relative;margin:12px auto 26px;filter:drop-shadow(0 14px 15px #d989ad38)}.envelope{position:absolute;left:0;bottom:0;width:190px;height:120px;border-radius:9px;background:#f8bfd3;overflow:visible}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(140deg,#ffdce8,#f4a9c4);clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);border-radius:9px}.flap{position:absolute;top:0;left:0;width:0;height:0;border-left:95px solid transparent;border-right:95px solid transparent;border-top:76px solid #f5a8c3;transform-origin:top;transition:transform .6s ease;z-index:3}.seal{position:absolute;z-index:4;left:calc(50% - 17px);top:43px;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#fff3f7;color:#c45a83;transition:opacity .25s}.letter-peek{position:absolute;left:19px;right:19px;bottom:14px;height:88px;border-radius:5px;background:#fffaf6;transition:transform .6s ease}.envelope.open .flap{transform:rotateX(180deg);z-index:0}.envelope.open .letter-peek{transform:translateY(-48px)}.envelope.open .seal{opacity:0}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.2rem,9vw,4rem);line-height:1.06;margin-bottom:12px;letter-spacing:-.045em}h2{font-size:clamp(1.55rem,5vw,2.2rem);letter-spacing:-.025em;margin-bottom:12px}h3{font-size:1.12rem;margin-bottom:8px}.script{font-family:"Segoe Print","Bradley Hand","Comic Sans MS",cursive;font-weight:500}.subtitle{max-width:490px;margin:0 auto 24px;color:var(--muted);font-size:1.04rem;line-height:1.7}.btn{border:0;border-radius:999px;padding:13px 20px;min-height:48px;cursor:pointer;font-weight:700;transition:transform .18s ease,box-shadow .18s ease}.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.98)}.btn-primary{color:white;background:linear-gradient(135deg,#d86f9a,#b96ad0);box-shadow:0 10px 24px #c66d9b3b}.btn-soft{color:#9b426c;background:white;border:1px solid #f2cddd}.button-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.tiny{font-size:.84rem;color:#947e8c;margin-top:15px}
+.section{margin:18px 0}.card{background:var(--card);border:1px solid #f4dce6;border-radius:25px;padding:clamp(20px,5vw,32px);box-shadow:var(--shadow);backdrop-filter:blur(8px)}.letter-card{position:relative;background:linear-gradient(145deg,#fffdf9,#fff6f8)}.letter-card:before{content:"";position:absolute;inset:10px;border:1px dashed #eac5d4;border-radius:17px;pointer-events:none}.letter-content{position:relative}.letter-copy{line-height:1.9;font-size:1.02rem;white-space:pre-line}.signature{margin-top:20px;color:var(--deep);font-size:1.35rem;line-height:1.55}.section-head{text-align:center;margin:36px 0 17px}.section-head p{color:var(--muted);line-height:1.6;margin-bottom:0}.appreciation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mini-card{padding:20px 15px;border-radius:20px;background:#ffffffbd;border:1px solid #f3d9e4;text-align:center;min-width:0}.mini-card .emoji{font-size:1.8rem;display:block;margin-bottom:10px}.mini-card p{color:var(--muted);font-size:.9rem;line-height:1.55;margin-bottom:0}.interactive-card{text-align:center}.message-box{min-height:52px;display:flex;align-items:center;justify-content:center;margin:18px 0 0;color:#9f4770;font-size:1.08rem;line-height:1.6}.note-envelope{margin:18px auto;width:100px;height:67px;position:relative;background:#f8bfd3;border-radius:5px}.note-envelope:before{content:"";position:absolute;inset:0;background:#f3a8c2;clip-path:polygon(0 0,50% 55%,100% 0)}.note-paper{display:none;text-align:left;background:#fffaf5;border:1px solid #f0d5df;border-radius:17px;padding:19px;line-height:1.8;margin-top:14px}.note-paper.show{display:block;animation:appear .35s ease both}.closing{text-align:center;padding:30px 20px;background:linear-gradient(140deg,#fff2f7,#f4efff)}.closing-flower{font-size:2.6rem;margin-bottom:10px;animation:sway 3s ease-in-out infinite;display:inline-block}@keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}.footer{text-align:center;color:#9b8794;font-size:.8rem;padding:25px 10px 0}.burst{position:fixed;z-index:10;pointer-events:none;font-size:20px;animation:burst 1.15s ease-out forwards}@keyframes burst{0%{opacity:0;transform:translate(0,0) scale(.4)}15%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.25) rotate(25deg)}}
+@media(max-width:560px){.wrap{padding:14px 13px 36px}.appreciation-grid{grid-template-columns:1fr}.mini-card{display:grid;grid-template-columns:44px 1fr;column-gap:10px;text-align:left;align-items:center;padding:16px}.mini-card .emoji{grid-row:span 2;margin:0}.mini-card h3{margin:0 0 4px}.mini-card p{grid-column:2}.hero{min-height:72vh}.card{border-radius:21px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="ambient" id="ambient" aria-hidden="true"></div>
+<main class="wrap">
+<div class="topline"><span class="pill">a little note, made with care ♡</span></div>
+<section id="opening" class="screen active" aria-labelledby="welcome-title">
+<div class="hero">
+<div class="envelope-wrap" aria-hidden="true"><div class="envelope" id="mainEnvelope"><div class="letter-peek"></div><div class="flap"></div><div class="seal">♥</div></div></div>
+<h1 id="welcome-title" class="script">Hey, Hima 💗</h1>
+<p class="subtitle">I made a little something for you. No big speech — just a small note from me.</p>
+<button class="btn btn-primary" id="openExperience" type="button">Open Your Surprise ✨</button>
+<p class="tiny">A tiny page, with a genuine thought behind it.</p>
+</div></section>
+<section id="mainContent" class="screen" aria-label="Apology and notes">
+<div class="section card letter-card"><div class="letter-content"><p class="pill">from my little corner of the internet 💌</p><h2 class="script">A Little Something From Me</h2><div class="letter-copy" id="apologyText"></div><p class="signature script" id="signature"></p></div></div>
+<div class="section-head"><h2 class="script">A Small Note for You 🌷</h2><p>Just a few words I wanted to say properly.</p></div>
+<section class="card"><p class="letter-copy" id="personalNote"></p></section>
+<div class="section-head"><h2 class="script">A Few Things I Appreciate ✨</h2><p>Small things, said honestly.</p></div>
+<section class="appreciation-grid" id="appreciationGrid" aria-label="Things I appreciate"></section>
+<div class="section-head"><h2 class="script">A Little Happiness for You 💖</h2><p>Tap if you'd like a tiny bit of positivity.</p></div>
+<section class="card interactive-card"><button class="btn btn-primary" id="happinessButton" type="button">Tap for a Little Happiness ✨</button><div class="message-box" id="happinessMessage" aria-live="polite">A little kindness, just because. 🌸</div></section>
+<div class="section-head"><h2 class="script">Psst… One Last Thing 🤫</h2><p>There's one more tiny note, if you want to read it.</p></div>
+<section class="card interactive-card"><div class="note-envelope" aria-hidden="true"></div><button class="btn btn-soft" id="toggleNote" type="button" aria-expanded="false" aria-controls="hiddenNote">Open This Note 💌</button><div class="note-paper" id="hiddenNote"><p class="letter-copy" id="hiddenNoteText"></p></div></section>
+<section class="section card closing"><div class="closing-flower" aria-hidden="true">🌷</div><h2 class="script">That's All for Now, Hima 💗</h2><p class="subtitle">Made with a little time, a little courage, and a lot of care.</p><p class="letter-copy" id="closingMessage"></p><div class="button-row"><button class="btn btn-primary" id="startAgain" type="button">Start Again ↻</button></div></section>
+<div class="footer">Made with care by Tanmay ♡</div>
+</section></main>
+<script>
+"use strict";
+// Personalize names and messages here.
+const CONFIG = {
+ FRIEND_NAME:"Hima", SENDER_NAME:"Tanmay",
+ APOLOGY_MESSAGE:`Hey Hima, 💗
+
+I wanted to make this little page for you because sometimes a simple message doesn't feel like enough to express what you mean.
+
+If I said or did anything that hurt you, upset you, or made things awkward between us, I'm genuinely sorry. That was never my intention.
+
+I know we've only known each other for a short time, but I appreciate getting to know you, and I don't want a misunderstanding to leave things feeling uncomfortable.
+
+I'm not making this to pressure you into replying or forgiving me. I just wanted to put some thought into saying sorry properly.
+
+I hope this little surprise makes you smile, even just a little. 🌷`,
+ PERSONAL_NOTE:`Hey Hima, I know we haven't known each other for very long, but I still wanted to make something special for you. If I ever said something that hurt you or made things awkward, I'm genuinely sorry. I never wanted that. No pressure to reply or forgive me immediately — I just wanted you to know that I mean my apology. I hope this little surprise brings a smile to your face. 💗`,
+ APPRECIATION_POINTS:[
+  {emoji:"🌸",title:"Your lovely vibe",description:"You bring your own little energy to a conversation."},
+  {emoji:"💬",title:"The little conversations",description:"Even small conversations can make a day feel nicer."},
+  {emoji:"🌷",title:"The chance to know you better",description:"I'm glad we got the chance to meet and talk."}
+ ],
+ WARM_MESSAGES:[
+  "I hope something makes you smile today, Hima. 🌸",
+  "You deserve little moments of happiness. 💗",
+  "Sending a tiny pocket of positivity your way. ✨",
+  "May your day have more smiles than worries. 🌷",
+  "Just a small reminder that kindness matters. 💌",
+  "Hope this little surprise made you smile. 🦋"
+ ],
+ HIDDEN_NOTE:"No matter what, I hope things feel okay between us. Take your time, and thank you for reading my little message. 🌷",
+ CLOSING_MESSAGE:"Thanks for taking a little time to see this. Whatever you feel, that's okay. I just wanted to make something thoughtful for you. Take care! 🌷"
+};
+const $ = id => document.getElementById(id);
+let lastWarmMessageIndex=-1, particleTimer=null;
+function setText(id,value){const el=$(id);if(el)el.textContent=value}
+function renderContent(){
+ document.title=`A Little Note for ${CONFIG.FRIEND_NAME} 💗`;
+ setText("welcome-title",`Hey, ${CONFIG.FRIEND_NAME} 💗`);
+ setText("apologyText",CONFIG.APOLOGY_MESSAGE);
+ setText("signature",`With care,\n${CONFIG.SENDER_NAME} ♡`);
+ setText("personalNote",CONFIG.PERSONAL_NOTE);
+ setText("hiddenNoteText",CONFIG.HIDDEN_NOTE);
+ setText("closingMessage",CONFIG.CLOSING_MESSAGE);
+ const grid=$("appreciationGrid");
+ if(grid){grid.replaceChildren();CONFIG.APPRECIATION_POINTS.forEach(point=>{
+  const card=document.createElement("article");card.className="mini-card";
+  const emoji=document.createElement("span");emoji.className="emoji";emoji.setAttribute("aria-hidden","true");emoji.textContent=point.emoji;
+  const heading=document.createElement("h3");heading.textContent=point.title;
+  const description=document.createElement("p");description.textContent=point.description;
+  card.append(emoji,heading,description);grid.appendChild(card);
+ })}
+}
+function showMainContent(){
+ const opening=$("opening"),main=$("mainContent"),envelope=$("mainEnvelope");
+ if(!opening||!main||!envelope||!opening.classList.contains("active"))return;
+ envelope.classList.add("open");
+ window.setTimeout(()=>{opening.classList.remove("active");main.classList.add("active");window.scrollTo({top:0,behavior:"smooth"})},420);
+}
+function restartExperience(){
+ $("mainContent")?.classList.remove("active");$("opening")?.classList.add("active");$("mainEnvelope")?.classList.remove("open");
+ $("hiddenNote")?.classList.remove("show");
+ const toggle=$("toggleNote");if(toggle){toggle.textContent="Open This Note 💌";toggle.setAttribute("aria-expanded","false")}
+ lastWarmMessageIndex=-1;setText("happinessMessage","A little kindness, just because. 🌸");window.scrollTo({top:0,behavior:"smooth"});
+}
+function showHappiness(){
+ const messages=CONFIG.WARM_MESSAGES;if(!messages.length)return;
+ let index=Math.floor(Math.random()*messages.length);
+ if(messages.length>1&&index===lastWarmMessageIndex)index=(index+1+Math.floor(Math.random()*(messages.length-1)))%messages.length;
+ lastWarmMessageIndex=index;setText("happinessMessage",messages[index]);createBurst($("happinessButton"));
+}
+function toggleHiddenNote(){
+ const note=$("hiddenNote"),button=$("toggleNote");if(!note||!button)return;
+ const open=note.classList.toggle("show");button.textContent=open?"Close This Note ✨":"Open This Note 💌";button.setAttribute("aria-expanded",String(open));
+}
+function createBurst(anchor){
+ if(!anchor||window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+ const rect=anchor.getBoundingClientRect(),symbols=["💗","✨","🌸","💕","⭐"];
+ for(let i=0;i<12;i++){const particle=document.createElement("span");particle.className="burst";particle.textContent=symbols[i%symbols.length];
+  particle.style.left=`${rect.left+rect.width/2}px`;particle.style.top=`${rect.top+rect.height/2}px`;
+  const angle=Math.PI*2*i/12,distance=55+Math.random()*65;
+  particle.style.setProperty("--dx",`${Math.cos(angle)*distance}px`);particle.style.setProperty("--dy",`${Math.sin(angle)*distance}px`);
+  document.body.appendChild(particle);particle.addEventListener("animationend",()=>particle.remove(),{once:true});
+ }
+}
+function addAmbientParticle(){
+ const ambient=$("ambient");if(!ambient||document.hidden||window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+ const particle=document.createElement("span");particle.className="floaty";particle.textContent=["♡","✦","✧","♥"][Math.floor(Math.random()*4)];
+ particle.style.left=`${Math.random()*100}%`;particle.style.fontSize=`${12+Math.random()*13}px`;
+ particle.style.animationDuration=`${8+Math.random()*8}s`;ambient.appendChild(particle);
+ particle.addEventListener("animationend",()=>particle.remove(),{once:true});
+}
+function init(){
+ renderContent();$("openExperience")?.addEventListener("click",showMainContent);$("happinessButton")?.addEventListener("click",showHappiness);
+ $("toggleNote")?.addEventListener("click",toggleHiddenNote);$("startAgain")?.addEventListener("click",restartExperience);
+ if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){particleTimer=window.setInterval(addAmbientParticle,1100);for(let i=0;i<5;i++)window.setTimeout(addAmbientParticle,i*250)}
+}
+document.addEventListener("visibilitychange",()=>{if(document.hidden&&particleTimer){window.clearInterval(particleTimer);particleTimer=null}else if(!document.hidden&&!particleTimer&&!window.matchMedia("(prefers-reduced-motion: reduce)").matches){particleTimer=window.setInterval(addAmbientParticle,1100)}});
+init();
+</script>
+</body>
+</html>
